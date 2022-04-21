@@ -1,0 +1,21 @@
+
+wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+header {
+font-size: 2em;
+text-align: center;
+}
+
+#word{
+    list-style: none;
+    display: flex;
+}
+
+#word > li{
+    display: inline;
+    padding: .5em;
+
+}
