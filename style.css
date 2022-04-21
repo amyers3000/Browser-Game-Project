@@ -9,13 +9,27 @@ font-size: 2em;
 text-align: center;
 }
 
-#word{
+ #word{
     list-style: none;
     display: flex;
+    justify-content: center; 
 }
 
 #word > li{
     display: inline;
     padding: .5em;
+    font-size: .8em;
+
+
+}
+
+#keyboard{
+    width: 60%;
+    margin: auto;
+
+}
+
+#keyboard > button{
+    margin:.2em;
 
 }
