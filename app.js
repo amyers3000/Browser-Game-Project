@@ -62,15 +62,27 @@ function interactiveKeys(char, button){
     }
     if(word.indexOf(char) === -1){
         button.setAttribute('disabled', true)
-        charUsed.push(char)
+        wrongText.append(' '+char+' ')
         mistakes++
         // Image function
-        
+
     }
  }
 
 
+let side = document.querySelector('aside')
+let wrongDiv = document.createElement('div')
+wrongDiv.id = 'wrong'
+let wrongText = document.createElement('h4')
+wrongDiv.innerHTML = '<h3 class> Wrong Letters <h3>'
+wrongDiv.append(wrongText)
+side.append(wrongDiv)
 
+function wrongChar(char){
+    char.forEach((used) =>{
+    wrongDiv.append(used)
+})
+}
 
     
 

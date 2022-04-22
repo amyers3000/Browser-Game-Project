@@ -9,7 +9,7 @@ font-size: 2em;
 text-align: center;
 }
 
- #word{
+ul {
     list-style: none;
     display: flex;
     justify-content: center; 
@@ -32,4 +32,21 @@ text-align: center;
 #keyboard > button{
     margin:.2em;
 
+}
+
+aside{
+    background-color: blanchedalmond;
+    height: 50%;
+    display: flex;
+    
+
+}
+
+#wrong{
+    background-color:aquamarine;
+    width: 40%
+}
+
+#wrong > h4{
+    font-size: .5em;
 }
