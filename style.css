@@ -19,6 +19,7 @@ ul {
     display: inline;
     padding: .75em;
     font-size: .8em;
+    
 
 
 }
@@ -31,12 +32,15 @@ ul {
 
 #keyboard > button{
     margin:.2em;
+    font-size: .4em;
+    
 
 }
 
 aside{
     background-color: blanchedalmond;
     height: 50%;
+    width: 95%;
     display: flex;
     
 
@@ -44,9 +48,18 @@ aside{
 
 #wrong{
     background-color:aquamarine;
-    width: 40%
+    width: 40%;
 }
 
 #wrong > h4{
     font-size: .5em;
 }
+
+#categories > button {
+    padding: 1em;
+    margin: 1.5em;
+    font-size: .4em;
+    
+    
+}
+
