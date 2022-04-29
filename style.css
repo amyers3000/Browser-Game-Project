@@ -39,7 +39,7 @@ ul {
 
 aside{
     background-color: blanchedalmond;
-    height: 50%;
+    height: 40%;
     width: 95%;
     display: flex;
     
@@ -51,7 +51,7 @@ aside{
     width: 40%;
 }
 
-#wrong > h4{
+ h4{
     font-size: .5em;
 }
 
@@ -63,3 +63,7 @@ aside{
     
 }
 
+aside{
+    display: flex;
+    justify-content: center;
+}
