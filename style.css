@@ -1,12 +1,27 @@
 
+body {
+    background-image: url('Minotaur_03/game_background_2/game_background_2.png');
+    background-color: #cccccc;
+    background-size: 2000px;
+    
+   }
+
+#header{
+    background-color: blanchedalmond;
+    width:50%;
+    margin:auto;
+    padding: 10px;
+}
 wrapper {
     display: flex;
     justify-content: center;
+    min-height: 20%;
 }
 
 header {
 font-size: 2em;
 text-align: center;
+min-height: 20%;
 }
 
 ul {
@@ -17,8 +32,11 @@ ul {
 
 #word > li{
     display: inline;
-    padding: .75em;
-    font-size: .8em;
+    margin:.4em;
+    padding: .4em;
+    font-size: .6em;
+    background-color: whitesmoke;
+    box-shadow: 5px 10px;
     
 
 
@@ -27,6 +45,8 @@ ul {
 #keyboard{
     width: 60%;
     margin: auto;
+    min-height: 20%;
+    padding-top:10px;
 
 }
 
@@ -39,9 +59,11 @@ ul {
 
 aside{
     background-color: blanchedalmond;
-    height: 40%;
-    width: 95%;
+    min-height: 5%;
+    width: 100%;
     display: flex;
+    justify-content: center;
+    margin:0px;
     
 
 }
@@ -63,7 +85,180 @@ aside{
     
 }
 
-aside{
-    display: flex;
-    justify-content: center;
+
+#image{
+    min-height: 30%;
+    margin-bottom: 155px;
+    margin-top:0px;
+    
+    
+}
+
+#body{
+    position: absolute;
+    top: 28%;
+    left: 43%;
+
+    z-index: 1
+    
+}
+
+#Head{
+
+    position: absolute;
+    z-index: 2;
+    top:15%;
+    left: 42%;
+    width:280px;
+}
+#Face{
+    z-index: 3;
+    position: absolute;
+    left: 47%;
+    top: 26%;
+    width:180px;
+}
+
+#Left_Arm{
+    position: absolute;
+    z-index:4;
+    left: 42%;
+    top:34%;
+}
+
+#Left_Hand{
+    position: absolute;
+    z-index: 1;
+    left: 42%;
+    top:41.5%;
+    width: 110px;
+}
+
+#Left_Leg{
+    position: absolute;
+    z-index: 0;
+    top: 43%;
+    left: 44%;
+
+}
+
+#Right_Leg{
+    position:absolute;
+    z-index:0;
+    top:43%;
+    left: 48%;
+}
+
+#Right_Arm{
+    position:absolute;
+    z-index: 0;
+    top:35%;
+    left: 51%;
+    transform: scaleX(-1)
+}
+
+#Right_Hand{
+    position: absolute;
+    z-index: -1;
+    top:42%;
+    left: 53%;
+    width: 110px;
+}
+
+#Weapon{
+    position: absolute;
+    z-index: -2;
+    left:52%;
+    top: 40%;
+    transform: rotate(-20deg)
+}
+
+
+@media screen and (max-width: 963px){
+    #header{
+        min-width: 100%;
+    }
+    #Body{
+        left: 35%;
+        top: 30%
+
+    }
+    #Head{
+        left: 33%
+    }
+    #Left_Arm{
+        left: 32%;
+        top: 39%
+    }
+    #Left_Hand{
+        left: 32%;
+        top: 48%
+    }
+    #Face{
+        left:44%;
+        top: 28%
+    }
+    #Left_Leg{
+        left:38%;
+        top:49%;
+    }
+    #Right_Leg{
+        left:46%;
+        top:49%;
+    }
+    #Right_Arm{
+        left:50%;
+        top:39%;
+    }
+    #Right_Hand{
+        left:54%;
+        top: 48%;
+    }
+    #weapon{
+        left:54%;
+        top:44%;
+    }
+}
+
+@media screen and (max-width: 1153px){
+    #Body{
+        left: 37%;
+        top: 30%
+
+    }
+    #Head{
+        left: 35%
+    }
+    #Left_Arm{
+        left: 34%;
+        top: 37%
+    }
+    #Left_Hand{
+        left: 34%;
+        top: 46%
+    }
+    #Face{
+        left:44%;
+        top: 28%
+    }
+    #Left_Leg{
+        left:39%;
+        top:47%;
+    }
+    #Right_Leg{
+        left:45%;
+        top:47%;
+    }
+    #Right_Arm{
+        left:49%;
+        top:37%;
+    }
+    #Right_Hand{
+        left:52%;
+        top: 46%;
+    }
+    #weapon{
+        left:53%;
+        top:42%;
+    }
 }

@@ -1,7 +1,9 @@
 // Wrong anwer array
 correct= [];
-mistakes = 0;
+mistakes = -1;
+let ready = false
 
+Mino = ['Head','Face','Left_Arm','Left_Hand','Left_Leg', 'Right_Arm', 'Right_Hand', 'Right_Leg', 'Weapon']
 // Alphabet array for keyboard
 let chars = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h',
 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's',
@@ -73,6 +75,7 @@ function catChoosen(i){
     selectedCategory = categories[i]
     newCat.textContent = 'Category: ' + catNames[i]
     word = selectedCategory[Math.floor(Math.random()* selectedCategory.length)]
+    ready = true
     console.log(word)
     removeWord()
     unknownWord()
@@ -133,23 +136,46 @@ function interactiveKeys(char){
               correct.push(char)
               winner()
             
-          }}else if(word.indexOf(char) === -1){
+          }}else if(word.indexOf(char) === -1 && ready === true){
             text.append('  '+char+'  ')
             wrongText.append(text)
             mistakes++
-            // Image function
-    }
+            if(mistakes-1<8){
+                let newLig = document.createElement('img')
+                newLig.src ='Minotaur_03/Vector Parts/'+ Mino[mistakes] +'.png'
+                newLig.setAttribute('alt', 'bodypart'+ mistakes)
+                newLig.id = Mino[mistakes]
+                image.append(newLig)
+            }else if(mistakes >= 6){
+                while (side.firstChild){
+                    side.removeChild(side.firstChild)
+                }
+                    side.textContent = 'You Lose!'
+                while (key.firstChild){
+                    key.removeChild(key.firstChild)
+                }
+                let header = document.querySelector('#header')
+                while (header.firstChild){
+                    header.removeChild(header.firstChild)
+                }
+                while (image.firstChild){
+                    image.removeChild(image.firstChild)
+                }
+                
+                
+                removeWord()
+             }
+        }
 
 }
  
 
 function winner(){
     if(correct.length === word.length){
-        console.log('You win')
         while (side.firstChild){
             side.removeChild(side.firstChild)
         }
-        side.textContent ='You Win!'  
+        side.textContent = 'You Win!'  
         }
 }
     
