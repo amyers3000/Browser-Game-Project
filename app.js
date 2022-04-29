@@ -150,7 +150,8 @@ function interactiveKeys(char){
                 while (side.firstChild){
                     side.removeChild(side.firstChild)
                 }
-                    side.textContent = 'You Lose!'
+                    side.textContent = 'GAME OVER'
+                    side.style.padding = '100px'
                 while (key.firstChild){
                     key.removeChild(key.firstChild)
                 }
