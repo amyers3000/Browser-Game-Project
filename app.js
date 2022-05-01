@@ -121,6 +121,7 @@ function keyboard(){
         let button = document.createElement('button');
         button.textContent = char;
         button.type = 'button';
+        button.id = char;
         button.setAttribute('class', 'btn btn-dark btn-lg');
         button.addEventListener('click', function(){ interactiveKeys(char, button)});
         key.append(button);
@@ -128,7 +129,8 @@ function keyboard(){
 }
 
 // Displays letter if correct or stores in the wrong letter div
-function interactiveKeys(char){
+function interactiveKeys(char, button){
+    button.setAttribute('disabled', 'true')
     correctChar = document.getElementsByClassName(char)
         if (word.indexOf(char) >= 0){
           for(let j=0; j<correctChar.length; j++){
@@ -146,6 +148,7 @@ function interactiveKeys(char){
                 newLig.setAttribute('alt', 'bodypart'+ mistakes)
                 newLig.id = Mino[mistakes]
                 image.append(newLig)
+                
             }else if(mistakes >= 9){
                 while (side.firstChild){
                     side.removeChild(side.firstChild)
@@ -155,6 +158,9 @@ function interactiveKeys(char){
                 while (key.firstChild){
                     key.removeChild(key.firstChild)
                 }
+                word.split()
+                word[0].toUpperCase
+                word.join()
                 newCat.textContent = 'Correct Answer: ' + word
                 
                 removeWord()
