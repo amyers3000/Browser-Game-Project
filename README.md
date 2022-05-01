@@ -33,7 +33,6 @@ The game is not compatiable with smaller screen windows or mobile devices. This 
 In the future, a div could be added at the beginning displaying instructions for the game. In addition, adding audio for when the user wins or loses could be benificial to the user experience and engagement.
 
 
-Audio
 
 Credits
 *******
