@@ -71,7 +71,7 @@ aside{
     display: flex;
     justify-content: center;
     margin:0px;
-    height: 20%;
+    height: 15%;
     
 
 }
@@ -88,7 +88,7 @@ aside{
 
 #categories > button {
     padding: 1em;
-    margin: 1.5em;
+    margin: 1em;
     font-size: .4em;
     
     
@@ -97,6 +97,7 @@ aside{
 #categories{
     text-align: center;
     margin:auto;
+    
 }
 /* Image formatting */
 

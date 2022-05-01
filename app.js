@@ -30,7 +30,6 @@ side.append(wrongDiv)
 
 // Adding div that will contain buttons for categories
 let catDiv = document.createElement('div')
-catDiv.innerHTML = '<h4>Select a Category:</h4>'
 catDiv.id = 'categories'
 side.append(catDiv)
 
@@ -152,14 +151,11 @@ function interactiveKeys(char){
                     side.removeChild(side.firstChild)
                 }
                     side.textContent = 'GAME OVER'
-                    side.style.padding = '100px'
+                    side.style.padding = '50px'
                 while (key.firstChild){
                     key.removeChild(key.firstChild)
                 }
-                while (image.firstChild){
-                    image.removeChild(image.firstChild)
-                }
-                
+                newCat.textContent = 'Correct Answer: ' + word
                 
                 removeWord()
              }
