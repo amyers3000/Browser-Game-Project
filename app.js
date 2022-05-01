@@ -10,7 +10,7 @@ let chars = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h',
 't', 'u', 'v', 'w', 'x', 'y', 'z','-'];
 
 // Categories and Words
-let categories = [['cyclops','ogre', 'leprechauns', 'gnomes', 'goblins','fairies','gorgon', 'mermaid','phoenix','basilisk'], ['zeus', 'hera', 'poseidon', 'demeter', 'athena', 'apollo', 'artemis'],['mount-olympus', 'troy','underworld', 'athens', 'labryinth']];
+let categories = [['cyclops','ogre', 'cerberus', 'centaurs', 'sirens','harpies','gorgon', 'medusa','hydra','basilisk'], ['zeus', 'hera', 'poseidon', 'demeter', 'athena', 'apollo', 'artemis'],['mount-olympus', 'troy','underworld', 'athens', 'labryinth']];
 let catNames = ['Mythical Beasts', 'Greek Gods', 'Mythical Places']
 // Selects an array of words/category and then selects a word
 let selectedCategory = []
@@ -37,6 +37,16 @@ side.append(catDiv)
 // Displaying current category
 let newCat = document.querySelector('#newCat')
 newCat.textContent = 'Category: __'
+
+// DOM manipuation for empty space section
+let wordLocation = document.querySelector('#word-guess');
+let wordSpace = document.createElement('ul');
+wordSpace.setAttribute('class', 'display-3');
+wordSpace.id = 'word';
+wordLocation.append(wordSpace)
+
+// Create and display keyboard
+let key = document.querySelector('#keyboard');
 
 function catChoosen(i){
     selectedCategory = categories[i]
@@ -84,13 +94,6 @@ function catChoosen(i){
 
 
 
-// DOM manipuation for empty space section
-let wordLocation = document.querySelector('#word-guess');
-let wordSpace = document.createElement('ul');
-wordSpace.setAttribute('class', 'display-3');
-wordSpace.id = 'word';
-wordLocation.append(wordSpace)
-
 // Creates empty spaces for each character of the word to be displayed on
 function unknownWord(){
     for(let i = 0; i < word.length; i++){
@@ -113,9 +116,7 @@ function removeWord(){
     }
 
 }
-// Create and display keyboard
-let key = document.querySelector('#keyboard');
-
+// Creates keyboard
 function keyboard(){
     chars.forEach((char) =>{
         let button = document.createElement('button');
@@ -140,13 +141,13 @@ function interactiveKeys(char){
             text.append('  '+char+'  ')
             wrongText.append(text)
             mistakes++
-            if(mistakes-1<8){
+            if(mistakes<9){
                 let newLig = document.createElement('img')
                 newLig.src ='Minotaur_03/Vector Parts/'+ Mino[mistakes] +'.png'
                 newLig.setAttribute('alt', 'bodypart'+ mistakes)
                 newLig.id = Mino[mistakes]
                 image.append(newLig)
-            }else if(mistakes >= 6){
+            }else if(mistakes >= 9){
                 while (side.firstChild){
                     side.removeChild(side.firstChild)
                 }
@@ -170,7 +171,7 @@ function interactiveKeys(char){
 
 }
  
-
+// Removes content from bottom and announces winner
 function winner(){
     if(correct.length === word.length){
         while (side.firstChild){
@@ -180,8 +181,6 @@ function winner(){
         }
 }
     
-
-console.log(correct)
 
 
 

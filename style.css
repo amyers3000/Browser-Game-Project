@@ -1,4 +1,6 @@
 
+/* Formatting of page */
+
 body {
     background-image: url('Minotaur_03/game_background_2/game_background_2.png');
     background-color: #cccccc;
@@ -24,6 +26,7 @@ text-align: center;
 min-height: 20%;
 }
 
+/* Sets up blank spaces for mystery word */
 ul {
     list-style: none;
     display: flex;
@@ -41,7 +44,7 @@ ul {
 
 
 }
-
+/* Keyboard */
 #keyboard{
     width: 60%;
     margin: auto;
@@ -57,9 +60,10 @@ ul {
 
 }
 
+/* Category section and letter guesses */
 aside{
     background-color: blanchedalmond;
-    min-height: 5%;
+
     width: 100%;
     display: flex;
     justify-content: center;
@@ -85,11 +89,14 @@ aside{
     
 }
 
+/* Image formatting */
+
 
 #image{
-    min-height: 30%;
+    min-height: 28%;
     margin-bottom: 155px;
     margin-top:0px;
+    
     
     
 }
@@ -137,7 +144,7 @@ aside{
 #Left_Leg{
     position: absolute;
     z-index: 0;
-    top: 43%;
+    top: 45%;
     left: 44%;
 
 }
@@ -145,7 +152,7 @@ aside{
 #Right_Leg{
     position:absolute;
     z-index:0;
-    top:43%;
+    top:45%;
     left: 48%;
 }
 
@@ -174,91 +181,15 @@ aside{
 }
 
 
-@media screen and (max-width: 963px){
-    #header{
-        min-width: 100%;
-    }
-    #Body{
-        left: 35%;
-        top: 30%
 
-    }
-    #Head{
-        left: 33%
-    }
-    #Left_Arm{
-        left: 32%;
-        top: 39%
-    }
-    #Left_Hand{
-        left: 32%;
-        top: 48%
-    }
-    #Face{
-        left:44%;
-        top: 28%
-    }
-    #Left_Leg{
-        left:38%;
-        top:49%;
-    }
-    #Right_Leg{
-        left:46%;
-        top:49%;
-    }
-    #Right_Arm{
-        left:50%;
-        top:39%;
-    }
-    #Right_Hand{
-        left:54%;
-        top: 48%;
-    }
-    #weapon{
-        left:54%;
-        top:44%;
-    }
+
+
+@media screen and (max-width: 1700px),
+screen and (max-height:800px){
+    #image{
+        display: none;
+    };
+   
 }
 
-@media screen and (max-width: 1153px){
-    #Body{
-        left: 37%;
-        top: 30%
 
-    }
-    #Head{
-        left: 35%
-    }
-    #Left_Arm{
-        left: 34%;
-        top: 37%
-    }
-    #Left_Hand{
-        left: 34%;
-        top: 46%
-    }
-    #Face{
-        left:44%;
-        top: 28%
-    }
-    #Left_Leg{
-        left:39%;
-        top:47%;
-    }
-    #Right_Leg{
-        left:45%;
-        top:47%;
-    }
-    #Right_Arm{
-        left:49%;
-        top:37%;
-    }
-    #Right_Hand{
-        left:52%;
-        top: 46%;
-    }
-    #weapon{
-        left:53%;
-        top:42%;
-    }
-}
