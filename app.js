@@ -130,15 +130,16 @@ function keyboard(){
 
 // Displays letter if correct or stores in the wrong letter div
 function interactiveKeys(char, button){
-    button.setAttribute('disabled', 'true')
     correctChar = document.getElementsByClassName(char)
         if (word.indexOf(char) >= 0){
+        button.setAttribute('disabled', 'true')
           for(let j=0; j<correctChar.length; j++){
               correctChar[j].textContent = char
               correct.push(char)
               winner()
             
           }}else if(word.indexOf(char) === -1 && ready === true){
+            button.setAttribute('disabled', 'true')
             text.append('  '+char+'  ')
             wrongText.append(text)
             mistakes++
@@ -158,10 +159,9 @@ function interactiveKeys(char, button){
                 while (key.firstChild){
                     key.removeChild(key.firstChild)
                 }
-                word.split()
-                word[0].toUpperCase
-                word.join()
-                newCat.textContent = 'Correct Answer: ' + word
+                
+                let newWord= word.toUpperCase()
+                newCat.textContent = 'Correct Answer: ' + newWord
                 
                 removeWord()
              }
