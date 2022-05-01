@@ -8,23 +8,24 @@ body {
     
    }
 
-#header{
+#Title{
     background-color: blanchedalmond;
     width:50%;
     margin:auto;
     padding: 10px;
+    text-align: center;
 }
 wrapper {
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     min-height: 20%;
 }
 
-header {
+/* header {
 font-size: 2em;
 text-align: center;
 min-height: 20%;
-}
+} */
 
 /* Sets up blank spaces for mystery word */
 ul {
@@ -50,12 +51,13 @@ ul {
     margin: auto;
     min-height: 20%;
     padding-top:10px;
+    text-align: center;
 
 }
 
 #keyboard > button{
     margin:.2em;
-    font-size: .4em;
+    font-size: 2em;
     
 
 }
@@ -75,6 +77,7 @@ aside{
 #wrong{
     background-color:aquamarine;
     width: 40%;
+    text-align: center;
 }
 
  h4{
@@ -89,11 +92,14 @@ aside{
     
 }
 
+#categories{
+    text-align: center;
+}
 /* Image formatting */
 
 
 #image{
-    min-height: 28%;
+    min-height: 24%;
     margin-bottom: 155px;
     margin-top:0px;
     

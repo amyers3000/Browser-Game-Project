@@ -156,10 +156,6 @@ function interactiveKeys(char){
                 while (key.firstChild){
                     key.removeChild(key.firstChild)
                 }
-                let header = document.querySelector('#header')
-                while (header.firstChild){
-                    header.removeChild(header.firstChild)
-                }
                 while (image.firstChild){
                     image.removeChild(image.firstChild)
                 }
@@ -182,6 +178,7 @@ function winner(){
 }
     
 
+// make autoplay work in chrome
 
 
 

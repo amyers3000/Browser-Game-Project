@@ -10,17 +10,14 @@
     <link rel = 'stylesheet' href = 'style.css'>
 </head>
 <body>
-    <audio controls loop>
-        <source src="Minotaur_03/Woodland_Fantasy_(1).mp3" type="audio/mp3">
-      Your browser does not support the audio element.
-    </audio>
+
     <wrapper>
         <header>
-            <div id="header">
+            <div id="Title">
                 <h1 class = 'display-3'>Minotaur</h1>
                 <h2 class = 'display-6' id = 'newCat'></h2>
             </div>
-        <header>
+        </header>
         <div id="image">
             <img src="Minotaur_03/Vector Parts/Body.png" alt="Minotaur body" id = 'body'>
             <!-- <img src="Minotaur_03/Vector Parts/Head.png" alt="Minotaur body" id = 'Head'>
@@ -33,6 +30,11 @@
             <img src="Minotaur_03/Vector Parts/Right_Leg.png" alt="Minotaur body" id = 'Right_Leg'>
             <img src="Minotaur_03/Vector Parts/Weapon.png" alt="Minotaur body" id = 'Weapon'> -->
         </div>
+        <iframe src="Minotaur_03/250-milliseconds-of-silence (2).mp3" allow="autoplay" id="audio" style="display: none"></iframe>
+        <audio autoplay loop id="playAudio">
+            <source src="Minotaur_03/Woodland_Fantasy_(1).mp3" type="audio/mp3">
+          Your browser does not support the audio element.
+        </audio>
         <section id="word-guess"></section>
         <section id="keyboard"></section>
     </wrapper>
