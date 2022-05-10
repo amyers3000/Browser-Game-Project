@@ -8,13 +8,23 @@ body {
     
    }
 
-#Title{
+#newCat{
     background-color: blanchedalmond;
+
+}
+h1{
+background-color: blanchedalmond;
+margin-bottom: 0px;
+}
+#Title{
+    
     width:50%;
     margin:auto;
     padding:10px;
     text-align: center;
     height: 17%;
+    
+    ;
 }
 wrapper {
     /* display: flex; */
@@ -97,6 +107,7 @@ aside{
 #categories{
     text-align: center;
     margin:auto;
+    background-color: blanchedalmond;
     
 }
 /* Image formatting */
@@ -163,14 +174,14 @@ aside{
     position:absolute;
     z-index:0;
     top:45%;
-    left: 48%;
+    left: 48.5%;
 }
 
 #Right_Arm{
     position:absolute;
     z-index: 0;
     top:35%;
-    left: 51.5%;
+    left: 51.65%;
     transform: scaleX(-1)
 }
 
@@ -178,7 +189,7 @@ aside{
     position: absolute;
     z-index: -1;
     top:42%;
-    left: 53%;
+    left: 53.65%;
     width: 110px;
 }
 
