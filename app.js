@@ -47,6 +47,7 @@ wordLocation.append(wordSpace)
 // Create and display keyboard
 let key = document.querySelector('#keyboard');
 
+
 function catChoosen(i){
     selectedCategory = categories[i]
     newCat.textContent = 'Category: ' + catNames[i]
