@@ -89,6 +89,10 @@ function catChoosen(i){
     console.log(word)
     removeWord()
     unknownWord()
+    while (key.firstChild){
+        key.removeChild(key.firstChild)
+    }
+    keyboard()
     console.log(word.length)
 }
 
@@ -175,6 +179,9 @@ function winner(){
     if(correct.length === word.length){
         while (side.firstChild){
             side.removeChild(side.firstChild)
+        }
+        while (key.firstChild){
+            key.removeChild(key.firstChild)
         }
         side.textContent = 'You Win!'  
         }
