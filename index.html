@@ -30,15 +30,16 @@
             <img src="Minotaur_03/Vector Parts/Right_Leg.png" alt="Minotaur body" id = 'Right_Leg'>
             <img src="Minotaur_03/Vector Parts/Weapon.png" alt="Minotaur body" id = 'Weapon'> -->
         </div>
-       
-        <audio id="player" controls loop>
-            <source src="Minotaur_03/Woodland_Fantasy_(1).mp3" type="audio/mp3">
-          Your browser does not support the audio element.
-        </audio>
-        <audio id="player" autoplay loop>
-            <source src="Minotaur_03/Woodland_Fantasy_(1).mp3" type="audio/mp3">
-          Your browser does not support the audio element.
-        </audio>
+        <audio id="audio" controls="" style="width: 10%;"><source src="Minotaur_03/Woodland_Fantasy_(1).mp3" type="audio/mp3">Please update your browser does not support the audio element.</audio>
+        <script type="text/javascript">
+            function autoplay(){
+                var r =confirm("Would You Like To AutoPlay Music?");
+                if (r == true) {
+                    document.getElementById("audio").play();
+                }
+              }
+            </script>
+            <script>autoplay();</script> 
         <section id="word-guess"></section>
         <section id="keyboard"></section>
     </wrapper>

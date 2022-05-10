@@ -1,7 +1,6 @@
 ******IMPORTANT*********
  Game is best played with browser window maximized and not on a mobile device! In order to properly see the image, browser window must be larger than 1200px x 700px.
 
-Audio will automatically play with the exception of Chrome. Controls have been added so feature can be used.
 
 Minotaur
 ********
