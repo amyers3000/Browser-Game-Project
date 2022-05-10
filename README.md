@@ -1,6 +1,8 @@
 ******IMPORTANT*********
  Game is best played with browser window maximized and not on a mobile device! In order to properly see the image, browser window must be larger than 1200px x 700px.
+ Smaller screen sizes are accomodated, but no image will appear.
 
+ Game works best in Chrome.
 
 Minotaur
 ********
@@ -30,6 +32,8 @@ Issues and Challenges
 The game is not compatiable with smaller screen windows or mobile devices. This is due to the image body parts not being responsive. This was dealt with by removing the image as the screen size decreased. This is an area of the game that could be potentially be addressed in the future by either making the image responsive to different windows or including an error message.
 
 In the future, a div could be added at the beginning displaying instructions for the game. In addition, adding audio for when the user wins or loses could be benificial to the user experience and engagement.
+
+Issues were also noted with the autoplay of the auido.
 
 Published Site
 *******
