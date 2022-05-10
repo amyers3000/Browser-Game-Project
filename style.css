@@ -194,7 +194,7 @@ aside{
 
 
 
-@media screen and (max-width: 1700px),
+@media screen and (max-width: 1200px),
 screen and (max-height:800px){
     #image{
         display: none;
