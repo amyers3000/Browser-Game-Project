@@ -12,7 +12,7 @@ body {
     background-color: blanchedalmond;
     width:50%;
     margin:auto;
-    padding: 10px;
+    padding:10px;
     text-align: center;
     height: 17%;
 }
@@ -170,7 +170,7 @@ aside{
     position:absolute;
     z-index: 0;
     top:35%;
-    left: 51%;
+    left: 51.5%;
     transform: scaleX(-1)
 }
 
@@ -195,7 +195,7 @@ aside{
 
 
 @media screen and (max-width: 1200px),
-screen and (max-height:800px){
+screen and (max-height:700px){
     #image{
         display: none;
     };
